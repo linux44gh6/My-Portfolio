@@ -12,7 +12,15 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors:{
+        color1:'#8750f7',
+        color2:'#210f44'
+      },
+      fontFamily:{
+        font1:'Roboto Serif'
+      }
     },
   },
-  plugins: [],
+  plugins: [ require('daisyui'),
+  ],
 };
