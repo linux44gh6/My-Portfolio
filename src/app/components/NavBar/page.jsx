@@ -57,8 +57,8 @@ const NavBarPage = () => {
       }
     </ul>
     <div className="ms-2">
-    <a className="btn rounded-full bg-gradient-to-r from-color1 to-color2  
-    hover:bg-gradient-to-r from-color2 to-color1 text-white">Hire Me!</a>
+    <button className="btn rounded-full bg-gradient-to-r from-color1 to-color2  
+    hover:bg-gradient-to-r hover:from-color2 hover:to-color1 text-white transition font-bold">Hire Me!</button>
   </div>
   </div>
  
