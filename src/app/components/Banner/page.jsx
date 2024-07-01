@@ -1,13 +1,17 @@
+"use client"
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import { MdOutlineFileDownload } from "react-icons/md";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaDribbble } from "react-icons/fa";
-
+import CountUp from 'react-countup';
+import ScrollTrigger from 'react-scroll-trigger';
 const BannerPage = () => {
+    const [couterSate,setCounterSate]=useState(false)
     return (
+        <div>
         <div className='flex justify-around items-center'>
             <div className=''>
                 <h1 className=' text-yellow-50 text-5xl font-extrabold font-font1'>I am Milon</h1>
@@ -29,10 +33,26 @@ const BannerPage = () => {
                 </div>
             </div>
             <div>
-                <div className='border-2 border-color1 hover:border-color1 rounded-lg rotate-3 hover:rotate-0 transition-all duration-300'>
+                <div className='border-2 border-color4 hover:border-color1 rounded-lg rotate-3 hover:rotate-0 transition-all duration-300'>
                     <img className='bg-black w-[400px] rounded-lg ' src="https://i.ibb.co/rxtT0Nz/tinywow-change-bg-photo-59253256.png" alt="Imge not found" />
                 </div>
             </div>
+           
+        </div>
+        
+               <ScrollTrigger onEnter={()=>setCounterSate(true)} onExit={()=>setCounterSate(false)}>
+               <div className='text-white flex justify-around mt-10'>
+               <h1 className='flex items-center gap-2  font-font1'><span className='text-5xl font-extrabold'>{couterSate&& <CountUp start={0} end={1}></CountUp>}</span> <span className='text-xl'>Years of
+                    <br />
+                Experience</span></h1>
+                <h1 className='flex items-center gap-2  font-font1'> <span className='text-5xl font-extrabold'>{couterSate&& <CountUp start={0} end={50}></CountUp>}+</span><span className='text-xl'>Project <br />
+                Completed</span></h1>
+                <h1 className='flex items-center gap-2  font-font1'> <span className='text-5xl font-extrabold'>{couterSate&& <CountUp start={0} end={50}></CountUp>}+</span><span className='text-xl'>Happy <br />
+                Clients</span></h1>
+                <h1 className='flex items-center gap-2  font-font1 '> <span className='text-5xl font-extrabold'>{couterSate&& <CountUp start={0} end={3}></CountUp>}</span><span className='text-xl'>Educational <br /> Experience</span></h1>
+                </div>
+               </ScrollTrigger>
+          
         </div>
     );
 };

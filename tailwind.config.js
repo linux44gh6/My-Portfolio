@@ -14,7 +14,9 @@ module.exports = {
       },
       colors:{
         color1:'#8750f7',
-        color2:'#1b0b38'
+        color2:'#0f0715',
+        color3:"#140c1c",
+        color4:"#2a1454"
       },
       fontFamily:{
         font1:'Roboto Serif'

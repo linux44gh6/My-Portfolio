@@ -4,7 +4,7 @@ import BannerPage from "./components/Banner/page";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex-col items-center justify-between bg-gradient-to-r from-color2  to-color1">
+    <main className="min-h-screen flex-col items-center justify-between bg-gradient-to-r from-color3 to-color4">
      <NavBarPage></NavBarPage>
      <BannerPage></BannerPage>
     </main>
