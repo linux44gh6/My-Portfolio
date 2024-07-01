@@ -49,7 +49,7 @@ const BannerPage = () => {
                 Completed</span></h1>
                 <h1 className='flex items-center gap-2  font-font1'> <span className='text-5xl font-extrabold'>{couterSate&& <CountUp start={0} end={50}></CountUp>}+</span><span className='text-xl'>Happy <br />
                 Clients</span></h1>
-                <h1 className='flex items-center gap-2  font-font1 '> <span className='text-5xl font-extrabold'>{couterSate&& <CountUp start={0} end={3}></CountUp>}</span><span className='text-xl'>Educational <br /> Experience</span></h1>
+                <h1 className='flex items-center gap-2  font-font1 '> <span className='text-5xl font-extrabold'>{couterSate&& <CountUp start={0} end={3}></CountUp>}</span><span className='text-xl'> Years of <br /> Educational  Experience</span></h1>
                 </div>
                </ScrollTrigger>
           
