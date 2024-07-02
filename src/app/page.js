@@ -2,6 +2,8 @@ import Image from "next/image";
 import NavBarPage from "./components/NavBar/page";
 import BannerPage from "./components/Banner/page";
 import SkilPage from "./components/skills/page";
+import ProjectPage from "./components/projects/page";
+import ResumePage from "./components/resume/page";
 
 export default function Home() {
   return (
@@ -9,6 +11,8 @@ export default function Home() {
      <NavBarPage></NavBarPage>
      <BannerPage></BannerPage>
      <SkilPage></SkilPage>
+     <ProjectPage></ProjectPage>
+     <ResumePage></ResumePage>
     </main>
   );
 }

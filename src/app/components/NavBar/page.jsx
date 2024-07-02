@@ -3,22 +3,28 @@ import React from 'react';
 const NavBarPage = () => {
     const link=[
         {
-            title:'service'
+            title:'service',
+            section:'service'
         },
         {
-            title:'Works'
+            title:'Works',
+            section:'project-section'
         },
         {
-            title:'Resume'
+            title:'Resume',
+            section:'education-section'
         },
         {
-            title:'Skills'
+            title:'Skills',
+            section:'skill-section'
         },
         {
-            title:'Testomonials'
+            title:'Testomonials',
+            section:''
         },
         {
-            title:'Contact'
+            title:'Contact',
+            section:'contact-section'
         },
     ]
     return (
@@ -53,7 +59,8 @@ const NavBarPage = () => {
   <div className="navbar-end hidden lg:flex">
     <ul className="menu menu-horizontal px-1 flex gap-5">
       {
-        link?.map(li=><Link className='text-white font-bold text-xl font-font1 capitalize' href={''}>{li.title}</Link>)
+        link?.map(li=><Link className='text-white font-bold text-xl font-font1 capitalize'
+           href={`#${li.section}`}>{li.title}</Link>)
       }
     </ul>
     <div className="ms-2">
