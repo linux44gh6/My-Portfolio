@@ -12,12 +12,12 @@ const BannerPage = () => {
     const [couterSate,setCounterSate]=useState(false)
     return (
         <div>
-        <div className='flex justify-around items-center'>
+        <div className='flex flex-col md:flex-row lg:flex-row justify-around items-center'>
             <div className=''>
                 <h1 className=' text-yellow-50 text-5xl font-extrabold font-font1'>I am Milon</h1>
-                <h1 className='text-8xl font-extrabold font-font1 bg-gradient-to-r from-color1 to-yellow-50 inline-block text-transparent bg-clip-text'>Web Developer </h1>
-                <p className='w-[500px] text-yellow-50 text-xl mt-4 mb-10'>I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people</p>
-                <div className='flex gap-5 items-center'>
+                <h1 className='text-3xl lg:text-8xl font-extrabold font-font1 bg-gradient-to-r from-color1 to-yellow-50 inline-block text-transparent bg-clip-text'>Web Developer </h1>
+                <p className=' w-full md:w-[500px] lg:w-[500px] text-yellow-50 text-xl mt-4 mb-10'>I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people</p>
+                <div className='flex flex-col md:flex-row lg:flex-row gap-5 items-center'>
                    <a href="https://drive.google.com/file/d/1sLPyA6rkMf-8Si5eJMgEpCvw7xv3rE3c/view" download='download.pdf' target='blank'>
                    <button className='btn rounded-full border border-color1 text-color1 bg-color2 hover:text-yellow-50 hover:bg-color1'>Download Resume <span className='text-xl'><MdOutlineFileDownload></MdOutlineFileDownload></span></button>
                    </a>
@@ -35,7 +35,7 @@ const BannerPage = () => {
                 </div>
             </div>
             <div>
-                <div className='border-2 border-color4 hover:border-color1 rounded-lg rotate-3 hover:rotate-0 transition-all duration-300'>
+                <div className='border-2 border-color4 hover:border-color1 rounded-lg lg:rotate-3 hover:rotate-0 transition-all duration-300'>
                     <img className='bg-black w-[400px] rounded-lg ' src="https://i.ibb.co/rxtT0Nz/tinywow-change-bg-photo-59253256.png" alt="Imge not found" />
                 </div>
             </div>
@@ -43,7 +43,7 @@ const BannerPage = () => {
         </div>
         
                <ScrollTrigger onEnter={()=>setCounterSate(true)} onExit={()=>setCounterSate(false)}>
-               <div className='text-white flex justify-around mt-10'>
+               <div className='text-white flex flex-col md:flex-row justify-center lg:flex-row lg:justify-around gap-4 lg:gap-0 mt-10'>
                <h1 className='flex items-center gap-2  font-font1'><span className='text-5xl font-extrabold'>{couterSate&& <CountUp start={0} end={1}></CountUp>}</span> <span className='text-xl'>Years of
                     <br />
                 Experience</span></h1>

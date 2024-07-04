@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 const SkilPage = () => {
     return (
       <section id='skill-section'>
-          <div  className=' bg-color3 h-[100vh] mt-10  '>
+          <div  className=' bg-color3 py-5 mt-10  '>
            <h1 className='text-center text-5xl  pt-10 font-font1 font-extrabold      bg-gradient-to-r from-color1 to-yellow-50 text-transparent bg-clip-text '>My skills</h1>
            <div className='px-10 flex flex-wrap gap-16 mt-8'>
             <Marquee direction='right' className=''>
@@ -52,7 +52,7 @@ const SkilPage = () => {
             </div>
           </div>
             </Marquee>
-            <Marquee direction='left' className=' -mt-5'>
+            <Marquee direction='left' className=' -mt-10 lg:-mt-5'>
           <div className=' flex gap-8 mt-3'>
           <div className='group'>
                 <div className='w-32 h-32 border-2 hover:scale-105 border-color4 hover:border-color1 transition duration-300 p-4'>

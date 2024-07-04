@@ -3,7 +3,8 @@ import { FaGraduationCap } from "react-icons/fa";
 import { SlBadge } from "react-icons/sl";
 const ResumePage = () => {
     return (
-        <div className=' bg-color3 mt-20 lg:mt-2'>
+        <section id='education-section'>
+            <div className=' bg-color3 mt-0 lg:mt-20 pb-16'>
             <h1 className='text-center text-2xl  lg:text-5xl font-font1 font-extrabold text-yellow-50 ; pt-20 lg:pt-10'><span className='bg-gradient-to-r from-color1 to-yellow-50 inline-block text-transparent bg-clip-text'>Education</span> & <span className='bg-gradient-to-r from-color1 to-yellow-50 inline-block text-transparent bg-clip-text'>Experience</span></h1>
 
             <div className='flex flex-col lg:flex-row justify-between px-10 mt-10'>
@@ -30,7 +31,7 @@ const ResumePage = () => {
                 </div>
                 
                 <div className=' ps-4'>
-                    <h1 className=' text-yellow-50 text-5xl font-font1 flex gap-2'><span><SlBadge className=' text-color1'></SlBadge></span>Experience</h1>
+                    <h1 className=' text-yellow-50 text-2xl lg:text-5xl font-font1 flex gap-2'><span><SlBadge className=' text-color1'></SlBadge></span>Experience</h1>
 
                     <div className=' mt-5'>
                         <h1 className=' text-3xl text-color1 font-font1'>web development</h1>
@@ -40,6 +41,7 @@ const ResumePage = () => {
                 </div>
             </div>
         </div>
+        </section>
     );
 };
 

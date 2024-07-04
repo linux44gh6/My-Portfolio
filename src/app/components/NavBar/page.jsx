@@ -20,7 +20,7 @@ const NavBarPage = () => {
         },
         {
             title:'Testomonials',
-            section:''
+            section:'education-section'
         },
         {
             title:'Contact',
@@ -54,7 +54,7 @@ const NavBarPage = () => {
         }
       </ul>
     </div>
-    <a className="flex  items-center text-xl text-white"> <img className='w-24' src="logo.png" alt="" /> <span className='font-font1 text-2xl'>abireshan32@gmail.com</span></a>
+    <a className="flex  items-center text-xl text-white"> <img className='w-12 lg:w-24' src="logo.png" alt="" /> <span className='font-font1 lg:text-2xl'>abireshan32@gmail.com</span></a>
   </div>
   <div className="navbar-end hidden lg:flex">
     <ul className="menu menu-horizontal px-1 flex gap-5">

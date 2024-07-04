@@ -2,12 +2,12 @@ import React from 'react';
 
 const FooterPage = () => {
     return (
-        <div className='bg-color3 h-[20vh]'>
+        <div className='bg-color3'>
             <div className=' flex justify-center'>
                 <img className='w-32' src="logo.png" alt="" />
             </div>
            <div>
-           <ul className=' flex gap-4 text-yellow-50 text-xl font-font1 font-semibold justify-center'>
+           <ul className=' flex flex-col md:flex-row lg:flex-row gap-4 text-yellow-50 text-xl font-font1 font-semibold justify-center'>
                 <li>Service</li>
                 <li>Work</li>
                 <li>Skills</li>
