@@ -59,7 +59,7 @@ const NavBarPage = () => {
   <div className="navbar-end hidden lg:flex">
     <ul className="menu menu-horizontal px-1 flex gap-5">
       {
-        link?.map(li=><Link className='text-white font-bold text-xl font-font1 capitalize'
+        link?.map(li=><Link key={link.title} className='text-white font-bold text-xl font-font1 capitalize'
            href={`#${li.section}`}>{li.title}</Link>)
       }
     </ul>

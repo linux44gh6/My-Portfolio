@@ -8,6 +8,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaDribbble } from "react-icons/fa";
 import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger';
+import Image from 'next/image';
 const BannerPage = () => {
     const [couterSate,setCounterSate]=useState(false)
     return (
@@ -23,19 +24,20 @@ const BannerPage = () => {
                    </a>
                     <div className='flex gap-2'>
                     
-                   <Link className=' border border-color1 text-color1 hover:bg-color1 hover:text-yellow-50 transition duration-300 p-3 rounded-full' href={''}>
+                   <Link className=' border border-color1 text-color1 hover:bg-color1 hover:text-yellow-50 transition duration-300 p-3 rounded-full' href={'https://web.facebook.com/MilonHossain32'} target='_blank'>
                    <FaFacebookF></FaFacebookF></Link>
-                   <Link className=' border border-color1 text-color1 hover:bg-color1 hover:text-yellow-50 transition duration-300 p-3 rounded-full' href={'https://www.linkedin.com/in/mdmilonhossain32'}>
+                   <Link className=' border border-color1 text-color1 hover:bg-color1 hover:text-yellow-50 transition duration-300 p-3 rounded-full' href={'https://www.linkedin.com/in/mdmilonhossain32'} target='_blank'>
                    <FaLinkedinIn></FaLinkedinIn></Link>
                    <Link className=' border border-color1 text-color1 hover:bg-color1 hover:text-yellow-50 transition duration-300 p-3 rounded-full' href={''}>
                    <FaDribbble></FaDribbble></Link>
-                   <Link className=' border border-color1 text-color1 hover:bg-color1 hover:text-yellow-50 transition duration-300 p-3 rounded-full' href={'https://github.com/linux44gh6'}>
+                   <Link className=' border border-color1 text-color1 hover:bg-color1 hover:text-yellow-50 transition duration-300 p-3 rounded-full' href={'https://github.com/linux44gh6'} target='_blank'>
                    <FaGithub></FaGithub></Link>
                     </div>
                 </div>
             </div>
             <div>
                 <div className='border-2 border-color4 hover:border-color1 rounded-lg lg:rotate-3 hover:rotate-0 transition-all duration-300'>
+                    
                     <img className='bg-black w-[400px] rounded-lg ' src="https://i.ibb.co/rxtT0Nz/tinywow-change-bg-photo-59253256.png" alt="Imge not found" />
                 </div>
             </div>

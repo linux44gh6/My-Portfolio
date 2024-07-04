@@ -36,7 +36,7 @@ const ResumePage = () => {
                     <div className=' mt-5'>
                         <h1 className=' text-3xl text-color1 font-font1'>web development</h1>
                         <h1 className=' text-yellow-50'>2024</h1>
-                        <p className=' text-yellow-50'>It's my learning experince.I complete my web developmet from programing hero.During my learning I was develop some several projects</p>
+                        <p className=' text-yellow-50'>Its my learning experince.I complete my web developmet from programing hero.During my learning I was develop some several projects</p>
                     </div>
                 </div>
             </div>
